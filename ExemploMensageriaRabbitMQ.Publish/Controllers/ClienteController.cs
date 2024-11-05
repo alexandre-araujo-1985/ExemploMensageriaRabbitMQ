@@ -1,15 +1,15 @@
-﻿using ExemploMensageriaRabbitMQ.Models;
+﻿using RabbitMQ.Client;
 using Microsoft.AspNetCore.Mvc;
-using RabbitMQ.Client;
+using ExemploMensageriaRabbitMQ.Consumer.Models;
 
-namespace ExemploMensageriaRabbitMQ.Controllers
+namespace ExemploMensageriaRabbitMQ.Consumer.Controllers
 {
-    [ApiController]
+	[ApiController]
 	[Route("api/[controller]")]
 	public class ClienteController : ControllerBase
 	{
 		[HttpPost]
-		public IActionResult ObterCliente([FromBody] Cliente cliente)
+		public IActionResult PublicarMensagem([FromBody] Cliente cliente)
 		{
 			var factory = new ConnectionFactory() { HostName = "localhost" };
 			var connection = factory.CreateConnection();

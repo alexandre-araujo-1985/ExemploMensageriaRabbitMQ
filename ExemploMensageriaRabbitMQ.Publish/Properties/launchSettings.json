@@ -1,12 +1,12 @@
 {
   "profiles": {
-    "ExemploMensageriaRabbitMQ.Subscribe": {
+    "ExemploMensageriaRabbitMQ.Publish": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:50264;http://localhost:50265"
+      "applicationUrl": "https://localhost:51364;http://localhost:51365"
     }
   }
 }

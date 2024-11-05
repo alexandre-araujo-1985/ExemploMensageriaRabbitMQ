@@ -1,4 +1,4 @@
-﻿namespace ExemploMensageriaRabbitMQ.Models
+﻿namespace ExemploMensageriaRabbitMQ.Consumer.Models
 {
 	public class Cliente
 	{
